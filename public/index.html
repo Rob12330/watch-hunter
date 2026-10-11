@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch Hunter</title>
+<style>
+body{background:#0b1019;color:white;font-family:Arial;margin:0;padding:22px}
+h1{font-size:30px;margin-bottom:5px}
+small{color:#9ca3af}
+header{margin-bottom:30px}
+.stats{display:flex;gap:10px;margin:20px 0}
+.stat{background:#192333;border-radius:12px;padding:15px;flex:1;text-align:center}
+.stat b{font-size:25px;color:#50e3a4}
+.card{background:#192333;border:1px solid #303c4c;border-radius:15px;padding:17px;margin:12px 0}
+a{color:#50e3a4}
+button{background:#50e3a4;border:0;padding:12px;border-radius:9px;font-weight:bold}
+</style>
+</head>
+<body>
+<header>
+<h1>⌚ WATCH HUNTER</h1>
+<small>Détecteur automatique de montres vintage</small>
+</header>
+<div class="stats">
+<div class="stat"><b id="count">0</b><p>Annonces</p></div>
+<div class="stat"><b>15€</b><p>Budget outils max.</p></div>
+</div>
+<button onclick="load()">Actualiser les résultats</button>
+<h2>🔥 Pépites détectées</h2>
+<div id="results">Chargement...</div>
+<script>
+async function load(){
+const box=document.getElementById("results");
+try{
+const r=await fetch("data.json?t="+Date.now());
+if(!r.ok)throw Error("Données indisponibles");
+const data=await r.json();
+const items=Array.isArray(data)?data:
+(data.annonces||data.results||data.items||[]);
+document.getElementById("count").textContent=items.length;
+box.innerHTML="";
+if(!items.length){box.textContent="Aucune annonce disponible pour le moment.";return}
+items.forEach(item=>{
+const card=document.createElement("div");
+card.className="card";
+const title=document.createElement("h3");
+title.textContent=item.title||item.titre||"Montre";
+card.appendChild(title);
+const price=document.createElement("p");
+price.textContent="Prix : "+(item.price||item.prix||"Non renseigné");
+card.appendChild(price);
+const url=item.url||item.link||item.lien;
+if(url&&/^https?:\/\//.test(url)){
+const a=document.createElement("a");
+a.href=url;a.target="_blank";a.rel="noopener";
+a.textContent="Voir l'annonce →";
+card.appendChild(a);
+}
+box.appendChild(card);
+});
+}catch(e){box.textContent="En attente des données du scanner."}
+}
+load();
+</script>
+</body>
+</html>
