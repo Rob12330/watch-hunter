@@ -1,14 +1,14 @@
 {
   "version": 3,
-  "generated_at": "2026-10-12T22:33:13Z",
+  "generated_at": "2026-10-12T23:33:00Z",
   "max_price": 15.0,
   "method": "Flux RSS du moteur de recherche (pas de collecte directe des plateformes)",
   "notice": "Résultats d’index publics. Les prix, la disponibilité et l’authenticité ne sont pas vérifiés.",
   "keywords_checked": [
-    "montre héritage",
-    "montre homme",
-    "montre femme",
-    "montre en panne"
+    "montre vintage",
+    "montre ancienne",
+    "montre mécanique",
+    "montre automatique"
   ],
   "sources": {
     "Vinted": {
