@@ -1,20 +1,20 @@
 {
   "version": 3,
-  "generated_at": "2026-10-12T19:33:49Z",
+  "generated_at": "2026-10-12T20:36:01Z",
   "max_price": 15.0,
   "method": "Flux RSS du moteur de recherche (pas de collecte directe des plateformes)",
   "notice": "Résultats d’index publics. Les prix, la disponibilité et l’authenticité ne sont pas vérifiés.",
   "keywords_checked": [
-    "lot montres",
-    "montre à réparer",
-    "seiko montre",
-    "citizen montre"
+    "tissot montre",
+    "omega montre",
+    "longines montre",
+    "lip montre"
   ],
   "sources": {
     "Vinted": {
       "queries_done": 4,
       "queries_total": 4,
-      "raw_results": 40,
+      "raw_results": 37,
       "new_links": 0,
       "state": "ok",
       "errors": []
