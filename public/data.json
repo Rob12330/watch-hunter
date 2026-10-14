@@ -1,14 +1,14 @@
 {
   "version": 3,
-  "generated_at": "2026-10-14T02:47:24Z",
+  "generated_at": "2026-10-14T03:48:49Z",
   "max_price": 15.0,
   "method": "Flux RSS du moteur de recherche (pas de collecte directe des plateformes)",
   "notice": "Résultats d’index publics. Les prix, la disponibilité et l’authenticité ne sont pas vérifiés.",
   "keywords_checked": [
-    "tissot montre",
-    "omega montre",
-    "longines montre",
-    "lip montre"
+    "yema montre",
+    "orient montre",
+    "timex montre",
+    "casio montre"
   ],
   "sources": {
     "Vinted": {
