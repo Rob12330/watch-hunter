@@ -1,20 +1,20 @@
 {
   "version": 3,
-  "generated_at": "2026-10-14T00:59:35Z",
+  "generated_at": "2026-10-14T01:43:35Z",
   "max_price": 15.0,
   "method": "Flux RSS du moteur de recherche (pas de collecte directe des plateformes)",
   "notice": "Résultats d’index publics. Les prix, la disponibilité et l’authenticité ne sont pas vérifiés.",
   "keywords_checked": [
-    "montre vintage",
-    "montre ancienne",
-    "montre mécanique",
-    "montre automatique"
+    "lot montres",
+    "montre à réparer",
+    "seiko montre",
+    "citizen montre"
   ],
   "sources": {
     "Vinted": {
       "queries_done": 4,
       "queries_total": 4,
-      "raw_results": 30,
+      "raw_results": 31,
       "new_links": 0,
       "state": "ok",
       "errors": []
