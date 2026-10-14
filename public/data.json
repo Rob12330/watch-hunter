@@ -1,20 +1,20 @@
 {
   "version": 3,
-  "generated_at": "2026-10-14T07:52:12Z",
+  "generated_at": "2026-10-14T08:50:52Z",
   "max_price": 15.0,
   "method": "Flux RSS du moteur de recherche (pas de collecte directe des plateformes)",
   "notice": "Résultats d’index publics. Les prix, la disponibilité et l’authenticité ne sont pas vérifiés.",
   "keywords_checked": [
-    "tissot montre",
-    "omega montre",
-    "longines montre",
-    "lip montre"
+    "yema montre",
+    "orient montre",
+    "timex montre",
+    "casio montre"
   ],
   "sources": {
     "Vinted": {
       "queries_done": 4,
       "queries_total": 4,
-      "raw_results": 0,
+      "raw_results": 40,
       "new_links": 0,
       "state": "ok",
       "errors": []
@@ -22,7 +22,7 @@
     "Leboncoin": {
       "queries_done": 4,
       "queries_total": 4,
-      "raw_results": 0,
+      "raw_results": 40,
       "new_links": 0,
       "state": "ok",
       "errors": []
